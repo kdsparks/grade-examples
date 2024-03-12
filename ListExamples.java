@@ -28,6 +28,4 @@ class ListExamples {
 			index2 += 1;
 		}
 	}
-
-	static void concatenate(List<String> list1, List<String> list2, List<String> mergedList) {
 }
