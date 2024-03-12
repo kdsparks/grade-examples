@@ -11,9 +11,7 @@ public class ListExamplesTests {
 		List<String> l2 = new ArrayList<String>(Arrays.asList("a", "b"));
 		List<String> l3 = new ArrayList<String>(Arrays.asList("c", "d", "e"));
 		List<String> mergedList = new ArrayList<String>();
-		ListExamples.merge(l1, l2, mergedList);
-		ListExamples.merge(l2, l3, mergedList);
-		assertArrayEquals(new String[]{ "a", "b", "x", "y"}, mergedList.toArray());
-		assertArrayEquals(new String[]{ "a", "b", "c", "d", "e"}, mergedList.toArray());
+		assertArrayEquals(new String[]{ "a", "b", "x", "y"}, ListExamples.merge(l1, l2, mergedList).toArray());
+		assertArrayEquals(new String[]{ "a", "b", "c", "d", "e"}, ListExamples.merge(l2, l3, mergedList).toArray());
 	}
 }
