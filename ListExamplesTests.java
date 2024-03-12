@@ -14,6 +14,7 @@ public class ListExamplesTests {
 		assertArrayEquals(new String[]{ "a", "b", "g", "h"}, mergedList.toArray());
 	}
 
+	@Test(timeout = 500)
 	public void testMerge2() {
     		List<String> l1 = new ArrayList<String>(Arrays.asList("x", "y"));
 		List<String> l2 = new ArrayList<String>(Arrays.asList("a", "b"));
