@@ -7,13 +7,13 @@ public class TestGrades {
 	public void testCalculateGradeA() {
 		Grade[] scores = {new Grade(100, 50), new Grade(90, 30), new Grade(85, 20)};
 		String theGrade = Grades.findGrade(scores);
-		assertEquals(theGrade, "A");
+		assertEquals("A", theGrade);
 	}
 
 	@Test(timeout = 500)
 	public void testCalculateGradeC() {
-		Grade[] scores = {new Grade(100, 5), new Grade(90, 30), new Grade(80, 65)};
+		Grade[] scores = {new Grade(100, 5), new Grade(0, 30), new Grade(100, 70)};
 		String theGrade = Grades.findGrade(scores);
-		assertEquals(theGrade, "C");
+		assertEquals("C", theGrade);
 	}
 }
