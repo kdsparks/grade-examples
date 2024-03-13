@@ -7,7 +7,7 @@ public class Grades {
 		for(int i = 0; i < scores.length; i++) {
 			int score = scores[i].getScore();
 			int weight = scores[i].getWeight();
-			grade += score * ((double)weight / 100);
+			grade = score * ((double)weight / 100);
 		}
 
 		if(grade >= 90) {
