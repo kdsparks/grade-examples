@@ -1,4 +1,6 @@
+
 public class Grade {
+
 	private int score;
 	private int weight;
 
@@ -14,4 +16,5 @@ public class Grade {
 	public int getWeight() {
 		return this.weight;
 	}
+
 }
