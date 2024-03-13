@@ -2,7 +2,7 @@
 public class Grades {
 
 	// 
-	public String findGrade(Grade[] scores) {
+	public static String findGrade(Grade[] scores) {
 		double grade = 0;
 		for(int i = 0; i < scores.length; i++) {
 			int score = scores[i].getScore();
