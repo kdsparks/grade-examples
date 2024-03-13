@@ -1,7 +1,8 @@
 
 public class Grades {
 
-	// 
+	// calculates the total grade based on the scores and their weights,
+	// and returns a String representing the letter grade
 	public static String findGrade(Grade[] scores) {
 		double grade = 0;
 		for(int i = 0; i < scores.length; i++) {
